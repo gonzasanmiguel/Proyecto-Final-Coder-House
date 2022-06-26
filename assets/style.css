@@ -232,6 +232,20 @@ section#iphone__section-SemiNew {
     height: 100vh;
 }
 
+#wrapper2 {
+    display: grid;
+    grid-template-areas:
+        "miHeader"
+        "titulo"
+        "iphone__section-New"
+        "miFooter"
+    ;
+    grid-template-rows: 50px 1fr 1fr 60px;
+    grid-gap: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
 @media screen and (min-width: 600px) {
     #wrapper {
         display: grid;
@@ -251,10 +265,10 @@ section#iphone__section-SemiNew {
 #wrapper2 {
     display: grid;
     grid-template-areas:
-        "miHeader"
-        "iphone__section-New"
-        "iphone__section-SemiNew"
-        "miFooter"
+        "miHeader mi header"
+        "titulo titulo"
+        "iphone__section-New iphone__section-New"
+        "miFooter miFooter"
     ;
     grid-template-rows: 50px 1fr 1fr 60px;
     grid-gap: 20px;
