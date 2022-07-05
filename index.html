@@ -14,11 +14,12 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol-1">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,10 +60,10 @@
       <a href="pages/iphone.html">Comprar ahora ></ion-icon></a>
     </div>
     <img src="./assets/img/Apple-iPhone13-Pro-alpine-green-hero-2up-220308_big_carousel.jpg.large.jpg" alt=""
-      class="w-75 col-12 ">
+      class="w-75 col-12 " data-aos="fade-up" data-aos-duration="3000">
 
   </section>
-  <section class="producto iPad col-12">
+  <section class="producto iPad col-12" data-aos="fade-down-right">
     <h1 class="ipadtexto">iPad Air</h1>
     <h2 class="ipadtexto">Un rayo de luz y de color.</h2>
     <div class="links">
@@ -72,7 +73,7 @@
     <img src="./assets/img/Apple_iPad_Air_5_knarzen_verarbeitung.jpg" alt="" class="w-75 col-12">
 
   </section>
-  <section class="producto MacBook">
+  <section class="producto MacBook" data-aos="fade-down-left">
     <h1 class="ipadtexto">MacBook Pro 13"</h1>
     <h2 class="ipadtexto">Superpotenciado con <img class="chipM2" src="./assets/img/apple-chip-m2-1200x877.jpg"
         alt="Logo chip m2"></h2>
@@ -86,7 +87,7 @@
 
   <div class="row productos-grid">
     <div class="col-md-6">
-      <div class="producto-small">
+      <div class="producto-small"data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <img src="./assets/img/logoAppleWatch (2).png" alt="Logo Apple Watch Series 7" class="logo-watch">
         <h4>Nuestra pantalla más grande hasta la fecha.</h4>
         <div class="links">
@@ -98,7 +99,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="producto-small">
+      <div class="producto-small" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <img src="./assets/img/airpods.png" alt="Airpods" class="airpods">
         <h3>AirPods</h3>
         <h4>Nuevo diseño con audio espacial.</h4>
@@ -131,13 +132,13 @@
         </div>
         <div class="text-center footer-redes">
           <a href="https://www.instagram.com/applestorejunin/" target="_blank">
-            <ion-icon name="logo-instagram" size="large"></ion-icon>
+            <ion-icon name="logo-instagram" size="large" data-aos="zoom-in"></ion-icon>
           </a>
           <a href="https://wa.me/message/U7OLONCIJ63MN1" target="_blank">
-            <ion-icon name="logo-whatsapp" size="large"></ion-icon>
+            <ion-icon name="logo-whatsapp" size="large" data-aos="zoom-in"></ion-icon>
           </a>
           <a href="https://www.facebook.com/Apple-Store-Junin-111528218185685" target="_blank">
-            <ion-icon name="logo-facebook" size="large"></ion-icon>
+            <ion-icon name="logo-facebook" size="large" data-aos="zoom-in"></ion-icon>
           </a>
         </div>
         <div class="text-center copyright">
@@ -146,6 +147,13 @@
         </div>
       </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1500
+    });
+  </script>
 
 </body>
 

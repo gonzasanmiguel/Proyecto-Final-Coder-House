@@ -14,11 +14,12 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol-1">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,7 +56,7 @@
     <section class="container mb-4 contacto">
 
 
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contactanos!</h2>
+        <h2 class="h1-responsive font-weight-bold text-center my-4" data-aos="fade-down">Contactanos!</h2>
         <p class="text-center w-responsive mx-auto mb-5">
             ¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. Nuestro equipo se comunicará
             contigo en cuestión de horas para ayudarte.</p>
@@ -104,7 +105,7 @@
 
                 </form>
 
-                <div class="text-center text-md-left mt-3">
+                <div class="text-center text-md-left mt-3" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="100" data-aos-duration="1500">
                     <a class="btn btn-dark">Enviar</a>
                 </div>
                 <div class="status"></div>
@@ -112,21 +113,21 @@
 
             <div class="col-md-3 text-center mt-3">
                 <ul class="list-unstyled mb-0">
-                    <li>
+                    <li data-aos="fade-down">
                         <a href="https://www.instagram.com/applestorejunin/" target="_blank">
                             <ion-icon name="logo-instagram" size="large" class="iconos-redes"></ion-icon>
                         </a>
                         <p>@applestorejunin</p>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-down">
                         <a href="https://wa.me/message/U7OLONCIJ63MN1" target="_blank">
                             <ion-icon name="logo-whatsapp" size="large" class="iconos-redes"></ion-icon>
                         </a>
                         <p>+54 9 236 4363148</p>
                     </li>
 
-                    <li>
+                    <li data-aos="fade-down">
                         <ion-icon name="mail-outline" size="large" class="iconos-redes"></ion-icon>
                         <p>applestorejunin@gmail.com</p>
                     </li>
@@ -160,19 +161,26 @@
                 </div>
                 <div class="text-center footer-redes">
                     <a href="https://www.instagram.com/applestorejunin/" target="_blank">
-                        <ion-icon name="logo-instagram" size="large"></ion-icon>
+                      <ion-icon name="logo-instagram" size="large" data-aos="zoom-in"></ion-icon>
                     </a>
                     <a href="https://wa.me/message/U7OLONCIJ63MN1" target="_blank">
-                        <ion-icon name="logo-whatsapp" size="large"></ion-icon>
+                      <ion-icon name="logo-whatsapp" size="large" data-aos="zoom-in"></ion-icon>
                     </a>
                     <a href="https://www.facebook.com/Apple-Store-Junin-111528218185685" target="_blank">
-                        <ion-icon name="logo-facebook" size="large"></ion-icon>
+                      <ion-icon name="logo-facebook" size="large" data-aos="zoom-in"></ion-icon>
                     </a>
-                </div>
-                <div class="text-center copyright">
+                  </div>
+                  <div class="text-center copyright">
                     <h6><small> Copyright &copy; 2022 Apple Store Junin &reg; - Todos los derechos
-                            reservados.</small></h6>
+                        reservados.</small></h6>
+                  </div>
                 </div>
-            </div>
-    </footer>
+            </footer>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init({
+                easing: 'ease-out-back',
+                duration: 1500
+              });
+            </script>
 </body>

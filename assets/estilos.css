@@ -51,10 +51,10 @@ body {
     font-weight: 400;
 }
 
-.procuto .links {
+.producto .links {
     text-decoration: none;
-    font-size: 21px;
-    margin-bottom: 80px;
+    font-size: 18px;
+    margin-bottom: 50px;
 }
 
 .mas-info {
@@ -202,7 +202,7 @@ footer {
 
 /* MEDIA QUERYS */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) { 
     .iphones-img {
         height: 24rem;
     }
