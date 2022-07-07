@@ -1,0 +1,23 @@
+footer {
+    background-color: $secondary;
+    margin-top: $xsmall;
+    .footer-items{
+        color: $primary;
+        margin: $small;
+    }
+    .footer-nav {
+        margin-top: $large;
+    }
+    .copyright {
+        margin-top: $large;
+        margin-bottom: $medium;
+    }
+    .footer-redes {
+        margin-top: $medium;
+        & a{
+            color: $primary;
+            margin: $small;
+        }
+    }
+    
+}
