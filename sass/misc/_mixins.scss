@@ -1,0 +1,10 @@
+@mixin reset ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin movil (){
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}

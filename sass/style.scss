@@ -1,16 +1,16 @@
 @import "./misc/variables";
 @import "./partials/footer";
+@import "./misc/mixins";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    @include reset(0,0);
     font-family: $font-principal;
 }
 
 body {
-    background-color: $background;
+    background-color: map-get($colores, "background" );
     margin-top: 40px;
 }
 
@@ -24,54 +24,47 @@ body {
 
 .nav-item {
     margin-right: $medium;
-
 }
 
 .navbar {
-    background-color: $primary !important;
+    background-color: map-get($colores , "primary" ) !important;
 }
 
 .nav-link {
-    color: white !important;
+    color: map-get($colores , "terciary" ) !important;
     font-size: $xsmall;
 }
 
-.producto {
+.producto{
     padding-top: $large;
     text-align: center;
-}
-
-.producto h1 {
-    font-size: $large;
-    font-weight: bold;
-}
-
-.producto h2 {
-    font-size: 27px;
-    font-weight: 400;
-}
-
-.producto .links {
-    text-decoration: none;
-    font-size: 18px;
-    margin-bottom: $large;
+    & h1{
+        font-size: $large;
+        font-weight: bold;
+    }
+    & h2{
+        font-size: $small;
+        font-weight: 400;
+    }
+    & .links {
+        text-decoration: none;
+        font-size: $xsmall;
+        margin-bottom: $large;
+    }
+    & .iphone13pro {
+        background-color: map-get($colores , "terciary" );
+    }
 }
 
 .mas-info {
     margin-right: $small;
 }
 
-.producto.iphone13pro {
-    background-color: $terciary;
-}
-
-
-
 /* IPAD */
 
 section.producto.iPad {
     margin-top: 10px;
-    background-color: $primary;
+    background-color: map-get($colores , "primary" );
 }
 
 .ipadtexto {
@@ -91,7 +84,7 @@ section.producto.iPad {
 
 section.producto.MacBook {
     margin-top: 10px;
-    background-color: $primary;
+    background-color: map-get($colores , "primary" );
 }
 
 .chipM2 {
@@ -110,18 +103,18 @@ section.producto.MacBook {
 }
 
 .producto-small {
-    height: 550px;
+    height: 33.75rem;
     padding-top: 40px;
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
     background-color: #f5f5f7;
+    & h4 {
+        font-size: $xsmall;
+        font-weight: 400;
+    }
 }
 
-.producto-small h4 {
-    font-size: 15px;
-    font-weight: 400;
-}
 
 .logo-watch {
     height: 60px;
@@ -142,16 +135,11 @@ section.producto.MacBook {
 
 }
 
-
-
 #footer-logo {
     margin-top: 40px;
     width: 250px;
     height: 40px;
 }
-
-
-
 
 /* CONTACTO */
 .contacto {
@@ -159,13 +147,16 @@ section.producto.MacBook {
 }
 
 .iconos-redes {
-    color: black;
+    color: map-get($colores, "primary" );
     margin: 1rem;
 }
 
 /* iPhone */
 .iphones-img {
     height: 17rem;
+    @include movil (){
+        height: 24rem;
+    }
 
 }
 
@@ -174,22 +165,8 @@ section.producto.MacBook {
     margin-top: 20px;
 }
 
-
-
-
 /* MEDIA QUERYS */
 
-@media screen and (max-width: 992px) { 
-    .iphones-img {
-        height: 24rem;
-    }
-
-    /* .footer-links{
-        display: flex;
-       flex-direction: column;
-        
-    } */
-}
 
 @media screen and (min-width: 768px) {
     .navbar-brand {

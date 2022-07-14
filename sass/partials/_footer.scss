@@ -1,8 +1,8 @@
 footer {
-    background-color: $secondary;
+    background-color: map-get($colores , "secondary" );
     margin-top: $xsmall;
     .footer-items{
-        color: $primary;
+        color: map-get($colores, "primary" );
         margin: $small;
     }
     .footer-nav {
@@ -15,7 +15,7 @@ footer {
     .footer-redes {
         margin-top: $medium;
         & a{
-            color: $primary;
+            color: map-get($colores, "primary" );
             margin: $small;
         }
     }
