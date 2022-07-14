@@ -1,0 +1,175 @@
+@import "./misc/variables";
+@import "./partials/footer";
+@import "./misc/mixins";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    @include reset(0,0);
+    font-family: $font-principal;
+}
+
+body {
+    background-color: map-get($colores, "background" );
+    margin-top: 40px;
+}
+
+.logo-apple {
+    font-size: $small;
+    margin-right: 70px;
+    color: white;
+    margin-top: 2px;
+    line-height: 8;
+}
+
+.nav-item {
+    margin-right: $medium;
+}
+
+.navbar {
+    background-color: map-get($colores , "primary" ) !important;
+}
+
+.nav-link {
+    color: map-get($colores , "terciary" ) !important;
+    font-size: $xsmall;
+}
+
+.producto{
+    padding-top: $large;
+    text-align: center;
+    & h1{
+        font-size: $large;
+        font-weight: bold;
+    }
+    & h2{
+        font-size: $small;
+        font-weight: 400;
+    }
+    & .links {
+        text-decoration: none;
+        font-size: $xsmall;
+        margin-bottom: $large;
+    }
+    & .iphone13pro {
+        background-color: map-get($colores , "terciary" );
+    }
+}
+
+.mas-info {
+    margin-right: $small;
+}
+
+/* IPAD */
+
+section.producto.iPad {
+    margin-top: 10px;
+    background-color: map-get($colores , "primary" );
+}
+
+.ipadtexto {
+    color: white;
+}
+
+.iPad a {
+    color: white;
+}
+
+.section-ipad {
+    text-align: center;
+
+}
+
+/* MACBOOK */
+
+section.producto.MacBook {
+    margin-top: 10px;
+    background-color: map-get($colores , "primary" );
+}
+
+.chipM2 {
+    width: 50px;
+    height: 50px;
+}
+
+.MacBook a {
+    color: white;
+}
+
+/* Productos SMALL */
+.productos-grid {
+    margin-top: 10px;
+
+}
+
+.producto-small {
+    height: 33.75rem;
+    padding-top: 40px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #f5f5f7;
+    & h4 {
+        font-size: $xsmall;
+        font-weight: 400;
+    }
+}
+
+
+.logo-watch {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.imagen-watch {
+    height: 350px;
+}
+
+.airpods {
+    height: 400px;
+}
+
+.producto-small h3 {
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#footer-logo {
+    margin-top: 40px;
+    width: 250px;
+    height: 40px;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 2rem;
+}
+
+.iconos-redes {
+    color: map-get($colores, "primary" );
+    margin: 1rem;
+}
+
+/* iPhone */
+.iphones-img {
+    height: 17rem;
+    @include movil (){
+        height: 24rem;
+    }
+
+}
+
+.tarjetasProductos {
+    margin: 20px;
+    margin-top: 20px;
+}
+
+/* MEDIA QUERYS */
+
+
+@media screen and (min-width: 768px) {
+    .navbar-brand {
+        display: none;
+    }
+}

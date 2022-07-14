@@ -1,0 +1,23 @@
+footer {
+    background-color: map-get($colores , "secondary" );
+    margin-top: $xsmall;
+    .footer-items{
+        color: map-get($colores, "primary" );
+        margin: $small;
+    }
+    .footer-nav {
+        margin-top: $large;
+    }
+    .copyright {
+        margin-top: $large;
+        margin-bottom: $medium;
+    }
+    .footer-redes {
+        margin-top: $medium;
+        & a{
+            color: map-get($colores, "primary" );
+            margin: $small;
+        }
+    }
+    
+}
